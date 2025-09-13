@@ -1,5 +1,5 @@
 body{
-    background-color: #3B543E;
+    background-color: #C4BBAF;
 ;
     margin-top: 30px;
     margin-right: 50px;
@@ -11,42 +11,42 @@ h1 {
     font-size: 32pt;
     font-family:'Comic Sans MS', Arial, sans-serif;
     font-style: italic;
-    color: #DCAF47;
+    color: #8D5B4C;
     margin-top: 5%;
     margin-bottom: 3%;
 }
 h2 {
     font-size: 24pt;
     font-family:'Comic Sans MS', Arial, sans-serif;
-    color: #DCAF47;
+    color: #8D5B4C;
 }
 h3 {
     font-size: 18pt;
     font-family:Tahoma, Geneva;
     font-weight: 500;
-    color: #DCAF47;
+    color: #5A2A27;
 }
 p {
     font-family: Tahoma, Geneva;
-    color: #67D970;
+    color: #5C4742;
 }
 
 a:link {
     font-family: Tahoma, Geneva;
-    color: #E7FF47;
+    color: #a63013;
     font-weight: bolder;
-    text-decoration: none;
+    text-decoration:none;
 }
 a:visited {
-    color: #4A994C;
+    color: #8D5B4C;
 }
 a:hover {
-    color: #DCAF47;
+    color: #7e220c;
 }
 
 .my-button {
-    background-color: #a8cfa9;
-    color: #3B543E;
+    background-color: #A5978B;
+    color: #5C4742;
 
     padding: 15px 32px;
     border: none;      
@@ -62,4 +62,12 @@ a:hover {
 }
 .my-button:hover {
     background-color: #DCAF47;
+}
+
+.colored-box {
+    background-color: #baa99a;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.25%;
+    padding-bottom: 1%;
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        body {
+            margin: 3%;
+        }
+
+        .card-header{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-content{
+            display: none;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
+        button{
+            height: 1.5rem;
+            width: 8rem;
+        }
+        button:hover{
+            background-color:rgb(105, 211, 218);
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h3{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h3>Community Garden Project</h3>
+            <button class="expand-btn" aria-label="Expand card">Show Info</button>
+        </div>
+        <div class="card-content">
+            <p class="summary">Join neighbors in creating a shared growing space...</p>
+            <div class="details hidden">
+                <p>Meeting every Saturday at 10am. Tools provided. All skill levels welcome.</p>
+                <p>Contact: <email>garden@community.org</email></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const expandBtn = document.querySelector('.expand-btn');
+        const details = document.querySelector('.card-content');
+        let info = false;
+
+        // Your code here
+        expandBtn.addEventListener('click', showInfo);
+
+        function showInfo(){
+            if (!info) {
+                info = true;
+                details.style.display = 'flex';
+                expandBtn.innerHTML = 'Hide Info';
+            }
+            else{
+                info = false;
+                details.style.display = 'none';
+                expandBtn.innerHTML = 'Show Info';
+            }
+        }
+    </script>
+</body>
+</html>

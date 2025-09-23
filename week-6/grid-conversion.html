@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery-container { 
+            display: grid; 
+            grid-template-columns: (auto-fit, minmax(250px, 1fr)); 
+            grid-template: 
+            "header header" auto
+            "nav    sidebar" auto
+            "main   sidebar" auto;
+        }
+        .gallery-header{
+            grid-area: auto;
+        }
+        .gallery-nav{
+            grid-area: auto;
+        }
+        .gallery-sidebar{
+            grid-area: auto;
+        }
+
+        .gallery-grid { 
+            display: grid; 
+            gap: 1rem; 
+        }
+        .photo-card { 
+            flex: 1 1 300px; 
+            height: 200px; 
+        }
+        .featured { 
+            display: grid;
+            grid-column: span 2; 
+            height: 300px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+    <header class="gallery-header">Photo Gallery</header>
+    <nav class="gallery-nav">
+        <button>All</button>
+        <button>Nature</button>
+        <button>Politics</button>
+        <button>Space</button>
+        <button>Famous</button>
+    </nav>
+    <main class="gallery-grid">
+        <div class="photo-card" data-category="nature">Photo 1</div>
+        <div class="photo-card" data-category="space">Photo 2</div>
+        <div class="photo-card" data-category="politics">Photo 3</div>
+        <div class="photo-card featured">Featured Photo</div>
+        <div class="photo-card" data-category="nature">Photo 5</div>
+        <div class="photo-card" data-category="famous">Photo 6</div>
+    </main>
+    <aside class="gallery-sidebar">Filter Options</aside>
+    </div>
+<script>
+    // Get all filter buttons and photo cards
+    const filterButtons = document.querySelectorAll('.gallery-nav button');
+    const photoCards = document.querySelectorAll('.photo-card');
+
+    // Add click event to each button
+    filterButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            const filterValue = event.target.textContent.toLowerCase();
+            filterPhotos(filterValue);
+        });
+    });
+
+    function filterPhotos(category) {
+        photoCards.forEach(card => {
+            if (category === 'all' || card.dataset.category === category) {
+            card.style.display = 'block';
+            } else {
+            card.style.display = 'none';
+            }
+        });
+    }
+</script>
+</body>
+</html>

@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nav-menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            padding-left: 7rem;
+            padding-right: 7rem;
+            position: relative;
+            background-color: lightgreen;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:hover{
+            font-weight: bold;
+        }
+
+        .nav-toggle{
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+        .nav-toggle span{
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: black;
+            border-radius: 2px;
+            margin: 2px 0;
+        }
+
+        .nav-toggle:hover span{
+            background: darkolivegreen;
+        }
+
+        @media (max-width: 768px){
+            .nav-menu{
+                display:none;
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+            .nav-menu.show {
+                display: flex;
+            }
+            .nav-toggle{
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Boulder County Housing</h1>
+        <h3>Explore more below:</h3>
+    </header>
     <nav class="main-nav">
         <div class="nav-brand">Community Hub</div>
         <button class="nav-toggle" aria-label="Toggle navigation menu">
@@ -14,15 +81,21 @@
             <span></span>
         </button>
         <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Contact</a></li>
             <li><a href="#resources">Resources</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Link Hub</a></li>
         </ul>
     </nav>
+<script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
 
-    <script>
-        
-    </script>
+    navToggle.addEventListener("click", ()=>{
+        const expanded = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", !expanded);
+        navMenu.classList.toggle("show");
+    });
+</script>
 </body>
 </html>

@@ -4,69 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        h3{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        p{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .nav-menu{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            padding-left: 7rem;
-            padding-right: 7rem;
-            position: relative;
-            background-color: lightgreen;
-        }
-        .nav-menu a {
-            text-decoration: none;
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        a:hover{
-            font-weight: bold;
-        }
-
-        .nav-toggle{
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-        }
-        .nav-toggle span{
-            display: block;
-            width: 25px;
-            height: 3px;
-            background: black;
-            border-radius: 2px;
-            margin: 2px 0;
-        }
-
-        .nav-toggle:hover span{
-            background: darkolivegreen;
-        }
-
-        @media (max-width: 768px){
-            .nav-menu{
-                display:none;
-                padding-left: 2rem;
-                padding-right: 2rem;
-            }
-            .nav-menu.show {
-                display: flex;
-            }
-            .nav-toggle{
-                display: flex;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
     <header>
@@ -74,7 +12,7 @@
         <h3>Explore more below:</h3>
     </header>
     <nav class="main-nav">
-        <div class="nav-brand">Community Hub</div>
+        <div class="nav-brand">Quick Directory</div>
         <button class="nav-toggle" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
@@ -87,6 +25,40 @@
             <li><a href="#contact">Link Hub</a></li>
         </ul>
     </nav>
+    <main class="main-gallery">
+        <div class="box">
+            <hgroup>    
+                <header><h2>Housing and Community Support</h2></header>
+                <p>Boulder's all-in-one collection for those seeking professional housing assistance. We offer a variety of resources and programs to empower those who need housing support.</p>
+                <img src="https://assets.bouldercounty.gov/wp-content/uploads/2025/01/aerial-view-of-housing-building.jpg" alt="home image 1">
+                <img src="https://assets.bouldercounty.gov/wp-content/uploads/2025/01/small-yellow-house-entry.jpg" alt="home image 2">
+            </hgroup>
+        </div>
+        <div class="box">
+                Housing Authority Links
+                <ul>
+                    <li><a href="">Available Homes</a></li>
+                    <li><a href="">Rental Assistance</a></li>
+                    <li><a href="">Rental Developments</a></li>
+                </ul>
+        </div>
+        <div class="box">Supportive Housing Division
+
+        </div>
+        <div class="box">Homeless Solutions for Boulder County
+                <ul>
+                    <li><a href="">Client Services</a></li>
+                    <li><a href="">Executive Board</a></li>
+                    <li><a href="">Project Recovery</a></li>
+                    <li><a href="">Data Dashboard</a></li>
+                </ul>
+        </div>
+        <div class="box"><a href="">Mobile Home Communities Program</a>
+
+        </div>
+        <div class="box"><a href="">Related Websites</a></div>
+    </main>
+
 <script>
     const navToggle = document.querySelector(".nav-toggle");
     const navMenu = document.querySelector(".nav-menu");

@@ -82,11 +82,25 @@
         left: 20px;
         padding: 12px;
         border-radius: 8px;
-    ">Toggle Dark Mode</button>
+    ">Toggle Dark Mode
+    <p id="status" style="display:none; color: rgb(0, 0, 0); font-weight: bold;"></p>
+    </button>
+
+    <button id="clearStatus" style="
+        display: block;
+        position: fixed;
+        bottom:20px;
+        left: 170px;
+        padding: 12px;
+        border-radius: 8px;
+    ">Clear Preference Data</button>
+
+    
 
 <script>
     const navToggle = document.querySelector(".nav-toggle");
     const navMenu = document.querySelector(".nav-menu");
+    const body = document.body;
 
     navToggle.addEventListener("click", ()=>{
         const expanded = navToggle.getAttribute("aria-expanded") === "true";
@@ -102,18 +116,38 @@
         window.scrollTo({top:0, behavior:"smooth"});
     });
 
+    /* dark mode stuff */
     const darkMode = document.getElementById("darkMode");
-    window.addEventListener("scroll", () => {
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-            darkMode.style.bottom = "auto";
-            darkMode.style.top = "20px";
-        } else {
-            darkMode.style.bottom = "20px";
-            darkMode.style.top = "auto";
-        }
-    })
+    const status = document.getElementById("status");
+    const clearStatus = document.getElementById("clearStatus");
+
+    const savedMode = localStorage.getItem("dark-mode");
+    if (savedMode === "enabled"){
+        body.classList.add("dark-mode");
+    }
+
+    /* click event listener set dark mode */
     darkMode.addEventListener("click", () => {
         document.body.classList.toggle("dark-mode");
+
+        /* saving to local storage yipeee*/
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("dark-mode", "enabled");
+        } else {
+            localStorage.setItem("dark-mode", "disabled");
+        }
+
+        status.textContent = "Preference saved!";
+        status.style.display = "block";
+
+        setTimeout(() => {
+            status.style.display = "none";
+        }, 2000);
+    });
+
+    clearStatus.addEventListener("click", () => {
+        localStorage.clear();
+        body.classList.remove("dark-mode");
     });
 
     navToggle.addEventListener("keyup", (e) => {
@@ -127,7 +161,6 @@
         localStorage.setItem('userLanguage', lang);
         // Update page content based on language
     }
-
     // Load on page visit
     const userLang = localStorage.getItem('userLanguage') || 'en';
     

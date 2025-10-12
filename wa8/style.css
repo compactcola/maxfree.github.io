@@ -1,0 +1,213 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 7rem;
+}
+
+/* dark mode color presets */
+body.dark-mode {
+  background: #222;
+  color: #f4f4f4;
+}
+body.dark-mode .box {
+  background-color: #333;
+  color: white;
+}
+body.dark-mode .nav-menu {
+  background-color: #444;
+}
+body.dark-mode a {
+  color: lightgreen;
+}
+
+/*box hell*/
+.box {
+  background-color: rgb(150, 190, 70);
+  color: black;
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.5; 
+  border-radius: 8px; 
+}
+.box a {
+    color: #232e0f;
+}
+
+.box h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.box p {
+  margin-bottom: 1rem;
+}
+
+.box ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.box li {
+  margin-bottom: 0.5rem;
+}
+
+.box > *:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1%;
+}
+.box > *:first-child img {
+  width: 100%;
+  height: auto;          
+  object-fit: cover;
+  display: block;
+}
+
+/* nav stuff from last week */
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    position: relative;
+    background-color: lightgreen;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover{
+    font-weight: bold;
+}
+.nav-menu a.active {
+    font-weight: bold;
+    color: #556b2f;
+}
+
+.nav-toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.nav-toggle span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    margin: 2px 0;
+}
+.nav-toggle:hover span{
+    background: darkolivegreen;
+}
+
+/* main gallery grid stuff */
+.main-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    column-gap: 1%;
+    row-gap: 2%;
+
+}
+.main-gallery img { /* i don't think this even works*/
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+/* featured section */
+.main-gallery > *:first-child {
+    grid-column: 1/-1;
+    place-items: left;
+    background: darkolivegreen;
+    color:white;
+}
+/* related websites and contact sections */
+.main-gallery > *:nth-child(5),
+.main-gallery > *:nth-child(6),
+.main-gallery > *:nth-child(7) {
+  background-color: darkslategrey;
+  color: white;
+}
+
+.main-gallery > *:nth-child(5) a,
+.main-gallery > *:nth-child(6) a,
+.main-gallery > *:nth-child(7) a{
+  color: white;
+  text-decoration:  none;
+}
+
+/* Phone */
+@media (min-width : 450px) and (max-width : 800px){
+    body{
+      margin-bottom: 8rem;
+    }
+    .nav-menu{
+      display:none;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .nav-brand{
+      display:none;
+    }
+    .nav-menu.show {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+    }
+    .nav-toggle{
+      display: flex;
+    }
+
+    .main-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .main-gallery > * {
+        grid-column: 1 / -1;
+    }
+
+    .main-gallery > *:nth-child(5),
+    .main-gallery > *:nth-child(6) {
+        grid-column: auto;
+    }
+
+    .main-gallery > *:nth-child(5),
+    .main-gallery > *:nth-child(6) {
+        grid-column: span 1;
+    }
+
+    .main-gallery {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+/* Not phone */
+@media (min-width : 800px) and (max-width : 1200px){
+    body{
+      margin-bottom: 8rem;
+    }
+    .nav-menu{
+      display:none;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .nav-brand{
+      display:none;
+    }
+    .nav-menu.show {
+      display: flex;
+    }
+    .nav-toggle{
+      display: flex;
+    }
+}
+/* Desktop */
+@media (min-width : 1200px){
+
+}

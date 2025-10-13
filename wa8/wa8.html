@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css"></link>
 </head>
 <body>
-    <header>
+    <hgroup>
         <h1>Boulder County Housing Repository</h1>
         <h2>Explore below to find access to websites best suited to fit your needs!</h2>
-    </header>
+    </hgroup>
     <nav class="main-nav">
         <div class="nav-brand">Quick Directory</div>
         <button class="nav-toggle" aria-label="Toggle navigation menu">
@@ -27,12 +27,10 @@
     </nav>
     <main class="main-gallery">
         <div class="box">
-            <hgroup>    
-                <header><h2>Housing and Community Support</h2></header>
-                <p>Boulder's all-in-one collection for those seeking professional housing assistance. We offer a variety of resources and programs to empower those who need housing support.</p>
-                <img src="https://assets.bouldercounty.gov/wp-content/uploads/2025/01/aerial-view-of-housing-building.jpg" alt="home image 1">
-                <img src="https://assets.bouldercounty.gov/wp-content/uploads/2025/01/small-yellow-house-entry.jpg" alt="home image 2">
-            </hgroup>
+            <header><h2>Housing and Community Support</h2></header>
+            <p>Boulder's all-in-one collection for those seeking professional housing assistance. We offer a variety of resources and programs to empower those who need housing support.</p>
+            <img src="https://assets.bouldercounty.gov/wp-content/uploads/2025/01/aerial-view-of-housing-building.jpg" alt="home image 1">
+            <img src="https://assets.bouldercounty.gov/wp-content/uploads/2025/01/small-yellow-house-entry.jpg" alt="home image 2">
         </div>
         <div class="box">
                 <b>Housing Authority Links</b>
@@ -66,7 +64,7 @@
             <p>Phone: <a href="tel:+3034413929">(303) 441-3929</a></p>
             <p>TTY: <a href="tel:+18006593656">1-800-659-3656 or 7-1-1</a></p>
             <p>Fax: 720-564-2283</p>
-            <p>Email: <email>housing@bouldercounty.gov</email></p>
+            <p>Email: </p><email>housing@bouldercounty.gov</email>
         </div>
         <div class="box"><a href="https://bouldercounty.gov/departments/housing/">Related Websites</a></div>
     </main>
@@ -88,7 +86,7 @@
         padding: 12px;
         border-radius: 8px;
     ">Toggle Dark Mode
-    <p id="status" style="display:none; color: rgb(0, 0, 0); font-weight: bold;"></p>
+    <span id="status" style="display:none; color: rgb(0, 0, 0); font-weight: bold;"></span>
     </button>
 
     <button id="clearStatus" style="
@@ -147,7 +145,7 @@
 
         setTimeout(() => {
             status.style.display = "none";
-        }, 2000);
+        }, 3000);
     });
 
     clearStatus.addEventListener("click", () => {
@@ -169,6 +167,7 @@
     // Load on page visit
     const userLang = localStorage.getItem('userLanguage') || 'en';
 
+    // make sure every link opens a new tab
     document.querySelectorAll('a[href^="http"]').forEach(link => {
         link.setAttribute('target', '_blank');
         link.setAttribute('rel', 'noopener noreferrer');

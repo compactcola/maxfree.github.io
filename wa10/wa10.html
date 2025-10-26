@@ -11,19 +11,36 @@
     <div class="app">
         <header>Random Color Palette Generator!</header>
 
-        <section class="palette" id="js-palette"></section>
+        <div>
+            <section class="palette" id="js-palette"></section>
 
-        <section class="controls" >
-          <button type="button" id="js-new-palette" class="new-palette button">
-            Make a new palette!
-          </button>
-          <select class="mode" id="js-mode">
-            <option value="analogic">Analogous</option>
-            <option value="monochrome">Monochromatic</option>
-            <option value="complement">Complementary</option>
-            <option value="triad">Triadic</option>
-          </select>
-        </section>
+            <section class="controls" >
+                <button type="button" id="js-new-palette" class="new-palette button">
+                    Make a new palette!
+                </button>
+                <select class="mode" id="js-mode">
+                    <option value="analogic">Analogous</option>
+                    <option value="monochrome">Monochromatic</option>
+                    <option value="complement">Complementary</option>
+                    <option value="triad">Triadic</option>
+                </select>
+            </section>
+        </div>
+      </div>
+
+      <div class="reflection">
+        <hgroup>
+            <h1>Reflection:</h1>
+            <p>I added a random color palatte generator to the website. I uses an open source API to generate a palette around a completely random hex code generated in the Javascript.
+                The mode select uses the API's own built in parameters to choose colors based off of that random hex that are either complementary, analogous, monochromatic, or triadic.
+                It then displays the 5 random colors it gets from the API onto the website, as well as their hex codes.
+            </p>
+            <p>
+                I don't think I would use it, but it could be cool to use to make the website more visually appealing and different whenever a user visits the page.
+                I could also see myself using it to recreate the color-clutter on the actual CoolMathGames page, by having each fake game cell have it's own randomly generated color.
+                This would be a lot less time consuming than choosing a color to match each fake game, and also better recreate the diversity and contrast in color on the real page.
+            </p>
+        </hgroup>
       </div>
 
       <script src="wa10.js"></script>

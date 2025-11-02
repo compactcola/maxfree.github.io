@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa11.css">
+    <title>Storm Spotter</title>
+</head>
+<body>
+    <header>
+        <h1>Storm Spotter</h1>
+        <h3>An API-powered weather viewing system</h3>
+    </header>
+
+    <div class="controls">
+        <p>Choose your location (by city)</p>
+        <input id="js-city" type="text" placeholder="Boulder" style="text-align: center;"/>
+
+        <p>Please select weather type</p>
+        <select name="mode" id="js-mode">
+            <option value="temp">Temperature</option>
+            <option value="weather">Weather</option>
+            <option value="wind">Wind</option>
+            <option value="humidity">Humidity</option>
+        </select>
+        <button type="button" id="js-new-forecast" class="new-forecast button">
+            Generate Forecast!
+        </button>
+    </div>
+
+    <div class="results" id="js-results"></div>
+
+    <button type="button" id="js-export">
+        Export Weather Data
+    </button>
+    <button type="button" id="js-clear-storage">
+        Clear Local Storage
+    </button>
+
+    <script src="wa11.js"></script>
+</body>
+</html>

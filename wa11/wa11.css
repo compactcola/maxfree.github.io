@@ -1,0 +1,23 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.controls {
+    text-align: center;
+}
+
+.results {
+    margin: 10pt;
+    text-align: center;
+    font-size: 150%;
+}
+

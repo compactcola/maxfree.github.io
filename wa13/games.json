@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Run 3",
+    "genre": ["Platformer"],
+    "difficulty": "Medium",
+    "rating": 4.8,
+    "tags": ["runner", "space", "reflex"],
+    "thumbnail": "images/run-3.png",
+    "url": "https://www.coolmathgames.com/0-run-3"
+  },
+  {
+    "id": 2,
+    "title": "Fireboy and Watergirl: Forest Temple",
+    "genre": ["Puzzle"],
+    "difficulty": "Medium",
+    "rating": 4.7,
+    "tags": ["co-op", "platform", "logic"],
+    "thumbnail": "images/fireboy-watergirl-forest.png",
+    "url": "https://www.coolmathgames.com/0-fireboy-and-watergirl-forest-temple"
+  },
+  {
+    "id": 3,
+    "title": "Tiny Fishing",
+    "genre": ["Idle"],
+    "difficulty": "Easy",
+    "rating": 4.5,
+    "tags": ["idle", "clicker", "fishing"],
+    "thumbnail": "images/tiny-fishing.png",
+    "url": "https://www.coolmathgames.com/0-tiny-fishing"
+  },
+  {
+    "id": 4,
+    "title": "Moto X3M",
+    "genre": ["Racing"],
+    "difficulty": "Hard",
+    "rating": 4.8,
+    "tags": ["motorcycle", "physics", "timing"],
+    "thumbnail": "images/moto-x3m.png",
+    "url": "https://www.coolmathgames.com/0-moto-x3m"
+  },
+  {
+    "id": 5,
+    "title": "2048",
+    "genre": ["Logic"],
+    "difficulty": "Medium",
+    "rating": 4.6,
+    "tags": ["math", "sliding", "numbers"],
+    "thumbnail": "images/2048.png",
+    "url": "https://www.coolmathgames.com/0-2048"
+  },
+  {
+    "id": 6,
+    "title": "World's Hardest Game",
+    "genre": ["Puzzle"],
+    "difficulty": "Expert",
+    "rating": 4.9,
+    "tags": ["timing", "reflex", "challenge"],
+    "thumbnail": "images/worlds-hardest-game.png",
+    "url": "https://www.coolmathgames.com/0-worlds-hardest-game"
+  },
+  {
+    "id": 7,
+    "title": "Papa's Pizzeria",
+    "genre": ["Simulation"],
+    "difficulty": "Easy",
+    "rating": 4.7,
+    "tags": ["cooking", "time-management", "classic"],
+    "thumbnail": "images/papas-pizzeria.png",
+    "url": "https://www.coolmathgames.com/0-papas-pizzeria"
+  },
+  {
+    "id": 8,
+    "title": "Parking Fury",
+    "genre": ["Driving"],
+    "difficulty": "Medium",
+    "rating": 4.4,
+    "tags": ["cars", "parking", "precision"],
+    "thumbnail": "images/parking-fury.png",
+    "url": "https://www.coolmathgames.com/0-parking-fury"
+  },
+  {
+    "id": 9,
+    "title": "Snake",
+    "genre": ["Arcade"],
+    "difficulty": "Easy",
+    "rating": 4.3,
+    "tags": ["classic", "arcade", "reflex"],
+    "thumbnail": "images/snake.png",
+    "url": "https://www.coolmathgames.com/0-snake"
+  },
+  {
+    "id": 11,
+    "title": "Swing Monkey",
+    "genre": ["Physics"],
+    "difficulty": "Easy",
+    "rating": 4.5,
+    "tags": ["timing", "swing", "arcade"],
+    "thumbnail": "images/swing-monkey.png",
+    "url": "https://www.coolmathgames.com/0-swing-monkey"
+  },
+  {
+    "id": 12,
+    "title": "Bob the Robber",
+    "genre": ["Stealth"],
+    "difficulty": "Medium",
+    "rating": 4.4,
+    "tags": ["sneak", "puzzle", "stealth"],
+    "thumbnail": "images/bob-the-robber.png",
+    "url": "https://www.coolmathgames.com/0-bob-the-robber"
+  },
+  {
+    "id": 13,
+    "title": "Chess",
+    "genre": ["Strategy"],
+    "difficulty": "Hard",
+    "rating": 4.7,
+    "tags": ["board-game", "logic", "multiplayer"],
+    "thumbnail": "images/chess.png",
+    "url": "https://www.coolmathgames.com/0-chess"
+  },
+  {
+    "id": 14,
+    "title": "Catch the Candy",
+    "genre": ["Physics"],
+    "difficulty": "Easy",
+    "rating": 4.3,
+    "tags": ["rope", "logic", "puzzle"],
+    "thumbnail": "images/catch-the-candy.png",
+    "url": "https://www.coolmathgames.com/0-catch-the-candy"
+  },
+  {
+    "id": 15,
+    "title": "Sugar, Sugar",
+    "genre": ["Puzzle"],
+    "difficulty": "Medium",
+    "rating": 4.6,
+    "tags": ["drawing", "physics", "flow"],
+    "thumbnail": "images/sugar-sugar.png",
+    "url": "https://www.coolmathgames.com/0-sugar-sugar"
+  },
+  {
+    "id": 16,
+    "title": "Penalty Kick Online",
+    "genre": ["Sports"],
+    "difficulty": "Medium",
+    "rating": 4.5,
+    "tags": ["soccer", "reaction", "multiplayer"],
+    "thumbnail": "images/penalty-kick.png",
+    "url": "https://www.coolmathgames.com/0-penalty-kick-online"
+  },
+  {
+    "id": 18,
+    "title": "Duck Life 4",
+    "genre": ["Simulation"],
+    "difficulty": "Medium",
+    "rating": 4.8,
+    "tags": ["training", "racing", "animals"],
+    "thumbnail": "images/duck-life-4.png",
+    "url": "https://www.coolmathgames.com/0-duck-life-4"
+  },
+  {
+    "id": 19,
+    "title": "Cool Math Sudoku",
+    "genre": ["Logic"],
+    "difficulty": "Hard",
+    "rating": 4.7,
+    "tags": ["numbers", "puzzle", "classic"],
+    "thumbnail": "images/sudoku.png",
+    "url": "https://www.coolmathgames.com/0-sudoku"
+  },
+  {
+    "id": 20,
+    "title": "Clicker Heroes",
+    "genre": ["Idle"],
+    "difficulty": "Easy",
+    "rating": 4.6,
+    "tags": ["clicker", "upgrade", "progression"],
+    "thumbnail": "images/clicker-heroes.png",
+    "url": "https://www.coolmathgames.com/0-clicker-heroes"
+  }
+]

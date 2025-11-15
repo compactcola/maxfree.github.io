@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa13.css">
+    <title>Game Results</title>
+</head>
+<body>
+    <section class="site">
+        <header class="site_header">
+            <div class="nav-left">
+                <h1 class="logo">
+                    <a href="wa13.html">CoolMath 2</a>
+                </h1>
+                <nav class="nav-links">
+                    <a data-genre="logic">Logic</a>
+                    <a data-genre="platformer">Platformer</a>
+                    <a data-genre="puzzle">Puzzle</a>
+                    <a data-genre="idle">Idle</a>
+                    <a data-genre="driving">Driving</a>
+                    <a data-genre="numbers">Numbers</a>
+                    <a data-genre="skill">Skill</a>
+                    <a data-genre="strategy">Strategy</a>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <input type="text" id="search" placeholder="Search Games">
+            </div>
+        </header>
+
+        <main class="site_main">
+            <h2 id="results-title">Results</h2>
+            <div class="results-grid" id="results"></div>
+        </main>
+    </section>
+
+    <script src="nav.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

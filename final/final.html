@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulder Housing Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <hgroup>
+        <h1>Boulder County Housing Repository</h1>
+        <p>Explore below to find access to websites best suited to fit your needs!</p>
+        <input type="text" id="search" placeholder="Explore Services">
+        <div id="search-results"></div>
+    </hgroup>
+    <nav class="main-nav">
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="https://bouldercounty.gov/departments/housing/housing-helpline/">Contact</a></li>
+            <li><a href="https://bouldercounty.gov/departments/housing/supportive-housing/">Resources</a></li>
+            <li><a href="https://bouldercounty.gov/departments/housing/housing-developments/">Events</a></li>
+        </ul>
+    </nav>
+
+    <img src="https://assets.bouldercounty.gov/wp-content/uploads/2017/02/subsidized-housing-banner-1920x210.jpg" alt="main img">
+    
+    <main class="main-gallery">
+        <div class="box">
+            <button class="box-header">Our Mission and Statement (Click to Expand)</button>
+            <div class="box-content">
+                <header><h2>Housing and Community Support</h2></header>
+                <p>Boulder's all-in-one collection for those seeking professional housing assistance. We offer a variety of resources and programs to empower those who need housing support.</p>
+                <img src="https://assets.bouldercounty.gov/wp-content/uploads/2025/01/aerial-view-of-housing-building.jpg" alt="home image 1">
+                <img src="https://assets.bouldercounty.gov/wp-content/uploads/2025/01/small-yellow-house-entry.jpg" alt="home image 2">
+            </div>
+        </div>
+        <div class="box">
+            <button class="box-header">Housing Authority Links</button>
+            <div class="box-content">
+                <ul>
+                    <li><a href="https://bouldercounty.gov/departments/housing/available-rentals/">Available Homes</a></li>
+                    <li><a href="https://bouldercounty.gov/departments/housing/subsidized-housing/">Rental Assistance</a></li>
+                    <li><a href="https://bouldercounty.gov/departments/housing/housing-developments/">Rental Developments</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <button class="box-header">Supportive Housing Division</button>
+            <div class="box-content">
+                <ul>
+                    <li><a href="https://bouldercounty.gov/departments/housing/housing-helpline/">Housing Helpline</a></li>
+                    <li><a href="https://bouldercounty.gov/departments/housing/family-self-sufficiency/">Family Self-Sufficiency Progam</a></li>
+                    <li><a href="https://bouldercounty.gov/departments/housing/supportive-housing/housing-stabilization-program/">Regional Housing Partnership</a></li>
+                    <li><a href="https://bouldercounty.gov/government/about-boulder-county/immigrant-resources/">Immigrant Resources</a></li>
+                    <li><a href="https://bouldercounty.gov/departments/housing/subsidized-housing/">Housing Choice Vouchers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box">
+            <button class="box-header">Homeless Solutions for Boulder County</button>
+            <div class="box-content">
+                <ul>
+                    <li><a href="https://bouldercounty.gov/departments/community-services/homeless/homeless-services/">Client Services</a></li>
+                    <li><a href="https://bouldercounty.gov/departments/community-services/homeless/project-recovery/homeless-dashboard/">Project Recovery</a></li>
+                    <li><a href="https://bouldercounty.gov/government/boards-and-commissions/boulder-county-regional-homeless-systems-management/">Excecutive Board</a></li>
+                    <li><a href="https://bouldercounty.gov/departments/community-services/homeless/project-recovery/homeless-dashboard/">Data Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box"><a href="https://bouldercounty.gov/departments/housing/mobile-homes-program/">Mobile Home Communities Program</a></div>
+        <div class="box"><a href="https://bouldercounty.gov/departments/housing/"><b>Contact</b></a>
+            <p>Phone: <a href="tel:+3034413929">(303) 441-3929</a></p>
+            <p>TTY: <a href="tel:+18006593656">1-800-659-3656 or 7-1-1</a></p>
+            <p>Fax: 720-564-2283</p>
+            <p>Email: <a href="mailto:housing@bouldercounty.gov">housing@bouldercounty.gov</a></p>
+        </div>
+        <div class="box"><a href="https://bouldercounty.gov/departments/housing/">Related Websites</a></div>
+    </main>
+
+    <button id="backToTop" style="
+        display:none; 
+        position:fixed; 
+        bottom: 20px; 
+        right:20px; 
+        padding: 12px;
+        border-radius:8px;
+    ">^ Back to Top</button>
+
+    <button id="darkMode" style="
+        display: block;
+        position: fixed;
+        bottom:20px;
+        left: 20px;
+        padding: 12px;
+        border-radius: 8px;
+    ">Toggle Dark Mode
+    <span id="status" style="display:none; color: rgb(0, 0, 0); font-weight: bold;"></span>
+    </button>
+
+    <button id="clearStatus" style="
+        display: block;
+        position: fixed;
+        bottom:20px;
+        left: 170px;
+        padding: 12px;
+        border-radius: 8px;
+    ">Clear Preference Data</button>
+
+    
+
+<script src="script.js"></script>
+</body>
+</html>
